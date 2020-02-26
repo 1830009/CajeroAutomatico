@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.stage.*?>
+
+<Stage xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.app.Controller">
+    <scene>
+        <Scene>
+            <AnchorPane prefHeight="399.0" prefWidth="511.0">
+                <children>
+               <ImageView fitHeight="420.0" fitWidth="599.0" layoutX="1.0" layoutY="50.0" pickOnBounds="true">
+                  <image>
+                     <Image url="@photos/bank.jpg" />
+                  </image>
+               </ImageView>
+
+                    <AnchorPane layoutX="124.0" layoutY="111.0" opacity="0.85" prefHeight="273.0" prefWidth="361.0" style="-fx-background-color: #ffff; -fx-border-color: #E59A03;">
+                        <children>
+                            <TextField fx:id="T_Usuario" layoutX="89.0" layoutY="73.0"  style="-fx-border-color: #E59A03;" />
+                            <Button fx:id="B_logIn" layoutX="125.0" layoutY="194.0" mnemonicParsing="false" onAction="#B_LogIn" prefHeight="32.0" prefWidth="104.0" style="-fx-background-color: #ffff; -fx-border-color: #E59A03; -fx-border-width: 3;" text="Ingresar">
+                                <font>
+                                    <Font name="System Bold" size="13.0" />
+                                </font></Button>
+                            <Label layoutX="116.0" layoutY="48.0" text="No. de Cuenta:">
+                                <font>
+                                    <Font name="Ubuntu Bold" size="19.0" />
+                                </font></Label>
+                            <Label layoutX="155.0" layoutY="129.0" text="NIP:">
+                                <font>
+                                    <Font name="Ubuntu Bold" size="19.0" />
+                                </font></Label>
+                            <PasswordField fx:id="T_Pass" layoutX="89.0" layoutY="153.0"  style="-fx-border-color: #E59A03;" />
+                        </children>
+                    </AnchorPane>
+                    <Label layoutX="-7.0" layoutY="14.0" prefHeight="36.0" prefWidth="609.0" style="-fx-background-color: #E59A03;" text="                BanUPV" textAlignment="CENTER" textFill="WHITE">
+                        <font>
+                            <Font name="Abyssinica SIL" size="35.0" />
+                        </font>
+                    </Label>
+                </children>
+            </AnchorPane>
+            <fill>
+                <LinearGradient endX="1.0" endY="1.0">
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color red="0.5411764979362488" green="0.0313725508749485" blue="0.5254902243614197" />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color red="1.0" green="1.0" blue="1.0" />
+                            </color>
+                        </Stop>
+                    </stops>
+                </LinearGradient>
+            </fill>
+        </Scene>
+    </scene>
+</Stage>

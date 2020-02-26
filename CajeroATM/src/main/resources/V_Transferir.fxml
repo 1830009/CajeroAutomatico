@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.stage.*?>
+
+<Stage xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.app.Controller">
+    <scene>
+        <Scene>
+            <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #C89837;">
+                <children>
+                    <AnchorPane layoutX="100.0" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: #ffff;">
+                        <children>
+                            <Label layoutX="92.0" layoutY="182.0" text="Ingrese la Cantidad a Transferir:">
+                                <font>
+                                    <Font name="AnjaliOldLipi" size="16.0" />
+                                </font>
+                            </Label>
+                            <Label layoutX="79.0" layoutY="102.0" text="Ingrese el No. de Cuenta a transferir:">
+                                <font>
+                                    <Font name="AnjaliOldLipi" size="16.0" />
+                                </font>
+                            </Label>
+                            <Label layoutX="264.0" layoutY="323.0" prefHeight="46.0" prefWidth="140.0" style="-fx-background-color: #EBA71C;" text="      Confirmar" textFill="WHITE">
+                                <font>
+                                    <Font name="AnjaliOldLipi" size="22.0" />
+                                </font></Label>
+                            <Label layoutX="58.0" layoutY="26.0" text="Transferencia Bancaria">
+                                <font>
+                                    <Font name="Abyssinica SIL" size="28.0" />
+                                </font>
+                            </Label>
+                            <TextField fx:id="T_CantTrans" layoutX="117.0" layoutY="218.0" promptText="Mayor a $100.00MXN" style="-fx-border-color: #1DA90C;" />
+                            <Label layoutX="104.0" layoutY="216.0" text="\$">
+                                <font>
+                                    <Font name="AnjaliOldLipi" size="17.0" />
+                                </font>
+                            </Label>
+                     <TextField fx:id="T_CuentaTrans" layoutX="118.0" layoutY="136.0" style="-fx-border-color: #EBA71C;" />
+                        </children></AnchorPane>
+                    <Button fx:id="Btn_ConfTrans" layoutX="515.0" layoutY="323.0" mnemonicParsing="false" onAction="#B_ConfTrans" prefHeight="43.0" prefWidth="57.0" style="-fx-background-color: #ffff;" text="&lt;">
+                        <font>
+                            <Font name="Tlwg Typo Bold" size="21.0" />
+                        </font>
+                    </Button>
+                </children>
+            </AnchorPane>
+        </Scene>
+    </scene>
+</Stage>

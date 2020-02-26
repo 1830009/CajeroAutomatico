@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.stage.*?>
+
+<Stage xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.app.Controller">
+    <scene>
+        <Scene>
+            <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #C89837;">
+                <children>
+                    <AnchorPane layoutX="100.0" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: #ffff;">
+                        <children>
+                            <Label layoutY="171.0" prefHeight="16.0" prefWidth="140.0" style="-fx-background-color: #EBA71C;" text="\$100" textFill="WHITE">
+                                <font>
+                                    <Font name="AnjaliOldLipi" size="22.0" />
+                                </font></Label>
+                            <Label layoutY="230.0" prefHeight="46.0" prefWidth="140.0" style="-fx-background-color: #EBA71C;" text="\$200" textFill="WHITE">
+                                <font>
+                                    <Font name="AnjaliOldLipi" size="22.0" />
+                                </font></Label>
+                            <Label layoutY="290.0" prefHeight="46.0" prefWidth="140.0" style="-fx-background-color: #EBA71C;" text="\$300" textFill="WHITE">
+                                <font>
+                                    <Font name="AnjaliOldLipi" size="22.0" />
+                                </font></Label>
+                            <Label layoutX="264.0" layoutY="170.0" prefHeight="46.0" prefWidth="140.0" style="-fx-background-color: #EBA71C;" text="\$500" textFill="WHITE">
+                                <font>
+                                    <Font name="AnjaliOldLipi" size="22.0" />
+                                </font></Label>
+                            <Label layoutX="264.0" layoutY="229.0" prefHeight="46.0" prefWidth="140.0" style="-fx-background-color: #EBA71C;" text="\$1,000" textFill="WHITE">
+                                <font>
+                                    <Font name="AnjaliOldLipi" size="22.0" />
+                                </font></Label>
+                            <Label layoutX="11.0" layoutY="26.0" text="Retirar">
+                                <font>
+                                    <Font name="Abyssinica SIL" size="39.0" />
+                                </font></Label>
+                            <Label fx:id="L_Usuario" layoutX="233.0" layoutY="35.0" maxHeight="30.0" maxWidth="177.0" minHeight="30.0" minWidth="163.0" prefHeight="30.0" prefWidth="163.0">
+                                <font>
+                                    <Font name="Abyssinica SIL" size="20.0" />
+                                </font>
+                            </Label>
+                            <Label layoutX="98.0" layoutY="119.0" text="Seleccione la cantidad a retirar:">
+                                <font>
+                                    <Font name="AnjaliOldLipi" size="14.0" />
+                                </font>
+                            </Label>
+                     <TextField fx:id="T_SaldoAct" alignment="TOP_LEFT" editable="false" layoutX="135.0" layoutY="76.0" maxHeight="38.0" maxWidth="106.0" minHeight="22.0" minWidth="106.0" prefHeight="25.0" prefWidth="106.0" style="-fx-border-color: #ffff;">
+                        <font>
+                           <Font name="Ubuntu Bold" size="13.0" />
+                        </font>
+                     </TextField>
+                     <TextField fx:id="T_Otro" layoutX="264.0" layoutY="290.0" prefHeight="43.0" prefWidth="140.0" promptText="Otro:">
+                        <font>
+                           <Font name="Ubuntu" size="20.0" />
+                        </font>
+                     </TextField>
+                     <Button layoutX="14.0" layoutY="79.0" mnemonicParsing="false" onAction="#B_SaldoAct" style="-fx-background-color: #ffff; -fx-border-color: #000000;" text="Saldo Actual" />
+                        </children></AnchorPane>
+                    <Button fx:id="Btn_100" alignment="CENTER" contentDisplay="BOTTOM" layoutX="31.0" layoutY="172.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#B_100" prefHeight="43.0" prefWidth="58.0" style="-fx-background-color: #ffff;" text="&gt;" textAlignment="CENTER" wrapText="true">
+                        <font>
+                            <Font name="Tlwg Typist Bold" size="21.0" />
+                        </font></Button>
+                    <Button fx:id="Btn_200" layoutX="31.0" layoutY="231.0" mnemonicParsing="false" onAction="#B_200" prefHeight="43.0" prefWidth="58.0" style="-fx-background-color: #ffff;" text="&gt;">
+                        <font>
+                            <Font name="Tlwg Typist Bold" size="21.0" />
+                        </font></Button>
+                    <Button fx:id="Btn_300" layoutX="31.0" layoutY="291.0" mnemonicParsing="false" onAction="#B_300" prefHeight="43.0" prefWidth="58.0" style="-fx-background-color: #ffff;" text="&gt;">
+                        <font>
+                            <Font name="Tlwg Typist Bold" size="21.0" />
+                        </font></Button>
+                    <Button fx:id="Btn_500" layoutX="512.0" layoutY="171.0" mnemonicParsing="false" onAction="#B_500" prefHeight="43.0" prefWidth="57.0" style="-fx-background-color: #ffff;" text="&lt;">
+                        <font>
+                            <Font name="Tlwg Typo Bold" size="21.0" />
+                        </font></Button>
+                    <Button fx:id="Btn_mil" layoutX="512.0" layoutY="231.0" mnemonicParsing="false" onAction="#B_mil" prefHeight="43.0" prefWidth="57.0" style="-fx-background-color: #ffff;" text="&lt;">
+                        <font>
+                            <Font name="Tlwg Typo Bold" size="21.0" />
+                        </font></Button>
+                    <Button fx:id="Btn_Otro" layoutX="512.0" layoutY="289.0" mnemonicParsing="false" onAction="#B_Otro" prefHeight="43.0" prefWidth="57.0" style="-fx-background-color: #ffff;" text="&lt;">
+                        <font>
+                            <Font name="Tlwg Typo Bold" size="21.0" />
+                        </font></Button>
+                </children>
+            </AnchorPane>
+        </Scene>
+    </scene>
+</Stage>

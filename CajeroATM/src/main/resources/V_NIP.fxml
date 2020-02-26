@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.stage.*?>
+
+<Stage xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.app.Controller">
+    <scene>
+        <Scene>
+            <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #C89837;">
+                <children>
+                    <AnchorPane layoutX="100.0" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: #ffff;">
+                        <children>
+                            <Label layoutX="123.0" layoutY="138.0" text="* Ingrese el nuevo NIP:">
+                                <font>
+                                    <Font name="AnjaliOldLipi" size="16.0" />
+                                </font>
+                            </Label>
+                            <Label layoutX="124.0" layoutY="64.0" text="* Ingrese el NIP actual:">
+                                <font>
+                                    <Font name="AnjaliOldLipi" size="16.0" />
+                                </font>
+                            </Label>
+                            <Label layoutX="264.0" layoutY="323.0" prefHeight="46.0" prefWidth="140.0" style="-fx-background-color: #EBA71C;" text="      Confirmar" textFill="WHITE">
+                                <font>
+                                    <Font name="AnjaliOldLipi" size="22.0" />
+                                </font></Label>
+                     <Label layoutX="28.0" layoutY="14.0" text="Cambio de NIP">
+                        <font>
+                           <Font name="Abyssinica SIL" size="28.0" />
+                        </font>
+                     </Label>
+                     <TextField fx:id="T_oldNIP" layoutX="117.0" layoutY="98.0" style="-fx-border-color: #EBA71C;" />
+                     <PasswordField fx:id="T_NewNIP" layoutX="117.0" layoutY="174.0" style="-fx-border-color: #1DA90C;" />
+                     <PasswordField fx:id="T_NewNIP2" layoutX="117.0" layoutY="236.0" style="-fx-border-color: #1DA90C;" />
+                     <Label layoutX="120.0" layoutY="204.0" text="* Confirme el nuevo NIP:">
+                        <font>
+                           <Font name="AnjaliOldLipi" size="16.0" />
+                        </font>
+                     </Label>
+                        </children></AnchorPane>
+                    <Button fx:id="Btn_CambiaNIP" layoutX="515.0" layoutY="324.0" mnemonicParsing="false" onAction="#B_CambiaNIP" prefHeight="43.0" prefWidth="57.0" style="-fx-background-color: #ffff;" text="&lt;">
+                        <font>
+                            <Font name="Tlwg Typo Bold" size="21.0" />
+                        </font>
+                    </Button>
+                </children>
+            </AnchorPane>
+        </Scene>
+    </scene>
+</Stage>
